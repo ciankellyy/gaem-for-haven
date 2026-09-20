@@ -1,0 +1,74 @@
+[gd_scene format=3 uid="uid://phq1v3fe44bl"]
+
+[ext_resource type="Script" uid="uid://dabsul1x0vim3" path="res://main_menu.gd" id="1_xbse4"]
+[ext_resource type="Texture2D" uid="uid://d4l7xkdtilsm" path="res://Blue.png" id="2_0k5qs"]
+[ext_resource type="FontFile" uid="uid://qms36ba42f07" path="res://AtkinsonHyperlegible-Bold.ttf" id="3_e0m8e"]
+[ext_resource type="Texture2D" uid="uid://dkk58aa7b5l3u" path="res://images/Common_face_of_one_euro_coin.png" id="4_xbse4"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_c3jr6"]
+texture = ExtResource("2_0k5qs")
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+modulate_color = Color(0.633757, 0.633757, 0.633757, 1)
+
+[node name="MainMenu" type="Control" unique_id=1944208370]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xbse4")
+
+[node name="Panel" type="Panel" parent="." unique_id=1646611811]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_c3jr6")
+
+[node name="Label" type="Label" parent="Panel" unique_id=75569840]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -557.0
+offset_top = 29.0
+offset_right = 553.0
+offset_bottom = 602.0
+grow_horizontal = 2
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("3_e0m8e")
+theme_override_font_sizes/font_size = 74
+text = "thank you for
+playing
+
+
+version 2 comes out in 15 years
+(cause im rockstar)"
+horizontal_alignment = 1
+
+[node name="Label" type="Label" parent="Panel/Label" unique_id=1681256026]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -560.0
+offset_top = 288.0
+offset_right = 277.0
+offset_bottom = 393.0
+grow_horizontal = 2
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("3_e0m8e")
+theme_override_font_sizes/font_size = 30
+text = "a euro for your efforts :)"
+horizontal_alignment = 1
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=385662706]
+
+[node name="CommonFaceOfOneEuroCoin" type="Sprite2D" parent="." unique_id=1170439230]
+position = Vector2(309.375, 294.25)
+scale = Vector2(0.19019933, 0.185)
+texture = ExtResource("4_xbse4")

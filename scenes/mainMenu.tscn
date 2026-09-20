@@ -1,0 +1,134 @@
+[gd_scene format=3 uid="uid://b5y0dn28ntx4x"]
+
+[ext_resource type="Script" uid="uid://dabsul1x0vim3" path="res://main_menu.gd" id="1_l7wge"]
+[ext_resource type="Texture2D" uid="uid://d4l7xkdtilsm" path="res://Blue.png" id="2_7nrmo"]
+[ext_resource type="FontFile" uid="uid://qms36ba42f07" path="res://AtkinsonHyperlegible-Bold.ttf" id="3_clbkb"]
+[ext_resource type="FontFile" uid="uid://cdimwhsn0es0x" path="res://AtkinsonHyperlegible-Regular.ttf" id="4_ldpc3"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_c3jr6"]
+texture = ExtResource("2_7nrmo")
+axis_stretch_horizontal = 1
+axis_stretch_vertical = 1
+modulate_color = Color(0.633757, 0.633757, 0.633757, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l1xq8"]
+bg_color = Color(1, 1, 1, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+expand_margin_left = 5.0
+expand_margin_right = 5.0
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_w7d22"]
+bg_color = Color(0.787759, 0.787759, 0.787759, 1)
+corner_radius_top_left = 15
+corner_radius_top_right = 15
+corner_radius_bottom_right = 15
+corner_radius_bottom_left = 15
+expand_margin_left = 5.0
+expand_margin_right = 5.0
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_w7d22"]
+
+[node name="MainMenu" type="Control" unique_id=1944208370]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_l7wge")
+
+[node name="Panel" type="Panel" parent="." unique_id=1646611811]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_c3jr6")
+
+[node name="Label" type="Label" parent="Panel" unique_id=75569840]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -283.5
+offset_top = 54.0
+offset_right = 283.5
+offset_bottom = 215.0
+grow_horizontal = 2
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("3_clbkb")
+theme_override_font_sizes/font_size = 74
+text = "Yet Another Generic
+Platformer Game"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=620946593]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -182.0
+offset_top = -61.0
+offset_right = 194.0
+offset_bottom = 243.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 20
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=924363489]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_ldpc3")
+theme_override_font_sizes/font_size = 31
+theme_override_styles/normal = SubResource("StyleBoxFlat_l1xq8")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_l1xq8")
+theme_override_styles/hover = SubResource("StyleBoxFlat_w7d22")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_w7d22")
+text = "Start the bug filled game.
+(worst choice)"
+
+[node name="Button2" type="Button" parent="VBoxContainer" unique_id=1345138975]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_ldpc3")
+theme_override_font_sizes/font_size = 31
+theme_override_styles/normal = SubResource("StyleBoxFlat_l1xq8")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_l1xq8")
+theme_override_styles/hover = SubResource("StyleBoxFlat_w7d22")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_w7d22")
+text = "Options
+(that dont do anything)"
+
+[node name="Button3" type="Button" parent="VBoxContainer" unique_id=745708598]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_ldpc3")
+theme_override_font_sizes/font_size = 31
+theme_override_styles/normal = SubResource("StyleBoxFlat_l1xq8")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_l1xq8")
+theme_override_styles/hover = SubResource("StyleBoxFlat_w7d22")
+theme_override_styles/focus = SubResource("StyleBoxEmpty_w7d22")
+text = "Exit
+(best choice)"
+
+[connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_start_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button2" to="." method="_on_options_pressed"]
+[connection signal="pressed" from="VBoxContainer/Button3" to="." method="_on_exit_pressed"]
